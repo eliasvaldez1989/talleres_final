@@ -1,0 +1,120 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body{
+    background-image: url(../img/fondo-index.jpg);
+    background-size: 100% ;
+
+    background-repeat: no-repeat;
+}
+
+.tit{
+    display: inline-block;
+    position: absolute;
+    height: 51px;
+    width: 100%;
+    margin-left: -50%;
+    margin-top: -3.5%;
+    color: #FFFFFF;
+    font-family: "Montserrat";
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 51px;
+    text-align: center;
+}
+.text {
+    height: 19px;
+    width: 100%;
+    margin-top: 5%;
+    color: #FFFFFF;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 19px;
+    text-align: center;
+}
+.imag{
+    height: 61.55px;
+    text-align: left;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 20%;
+    color: white;
+    display: none;
+}
+.tenesun{
+    position: absolute;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.39px;
+    margin-top: 7%;
+    margin-left: 22%;
+    text-align: center;
+}
+.bot {
+    box-sizing: border-box;
+    height: 43px;
+    width: 21%;
+    margin-top: 6%;
+    margin-left: 40%;
+    border: 2px solid #FFFFFF;
+    border-radius: 80px;
+}
+.textoUno{
+    margin: 0 auto;
+    margin-top: 40%;
+    text-align: center;
+}
+.aca{
+    height: 22px;
+    width: 301px;
+    color: #E5E5E5;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.39px;
+    line-height: 22px;
+    text-align: center;
+}
