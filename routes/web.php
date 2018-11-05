@@ -12,6 +12,10 @@ Route::get('/home', function (){
 
 Auth::routes();
 
+Route::get('registerStore','PostController@index' );
+Route::get('whoWeAre','PostController@indexWhoWeAre' );
+Route::get('faqs','PostController@faqs' );
+
 //Route::get('post/create', 'PostController@create');
 //
 //Route::post('post', 'PostController@store');

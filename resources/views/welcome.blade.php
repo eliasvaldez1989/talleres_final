@@ -23,7 +23,7 @@
     </div>
     <div class="logo_texto" >
         <img src="img/talleres.png" alt="" class="imag">
-        <p class="tenesun">Tenes un taller? ¡Asociate <a href="asociate.php">aca!</a></p>
+        <p class="tenesun">Tenes un taller? ¡Asociate <a href="registerStore">aca!</a></p>
     </div>
 </div>
 </div>
