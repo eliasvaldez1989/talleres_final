@@ -1,7 +1,7 @@
 window.onload = function () {
-    var formulario = document.querySelector('.registerUser');
 
-    var campos = formulario.elements;
+    var form = document.querySelector('.registerUser');
+    var campos = form.elements;
 
     campos = Array.from(campos);
     campos.pop();
@@ -9,11 +9,11 @@ window.onload = function () {
     const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     const regexNumbers = /^\d+$/;
 
-    var campoFullName = formulario.fullName;
-    var campoEmail = formulario.email;
-    var campoPassword = formulario.password;
-    var campoRePassword = formulario.rePassword;
-    var campoCountry = formulario.country;
+    var formFullName = form.fullName;
+    var formEmail = form.email;
+    var formPassword = form.password;
+    var formRePassword = form.rePassword;
+    var formCountry = form.country;
     var finalData = {};
 
     function validateEmpty () {
@@ -41,25 +41,12 @@ window.onload = function () {
             this.classList.remove('is-invalid');
         }
     }
+    
 
-    function validateEmptyAndNumber () {
-        var error = this.parentElement.querySelector('.invalid-feedback');
-        var nombreCampo = this.parentElement.querySelector('label').innerText;
-        if (this.value.trim() === '') {
-            this.classList.add('is-invalid');
-            error.innerText = 'El campo ' + nombreCampo + ' es obligatorio';
-        } else if (!regexNumbers.test(this.value.trim())) {
-            error.innerText = 'El teléfono debe contener solo números';
-        } else {
-            error.innerText = '';
-            this.classList.remove('is-invalid');
-        }
-    }
-
-    campoFullName.addEventListener('blur', validateEmpty);
-    campoEmail.addEventListener('blur', validateEmptyAndEmail);
-    campoPhone.addEventListener('blur', validateEmptyAndNumber);
-    campoCountry.addEventListener('blur', validateEmpty);
+    formFullName.addEventListener('blur', validateEmpty);
+    formEmail.addEventListener('blur', validateEmptyAndEmail);
+    formPhone.addEventListener('blur', validateEmptyAndNumber);
+    formCountry.addEventListener('blur', validateEmpty);
 
     campoPassword.addEventListener('blur', function () {
         var error = this.parentElement.querySelector('.invalid-feedback');
@@ -86,7 +73,7 @@ window.onload = function () {
         }
     });
 
-    formulario.addEventListener('submit', function (e) {
+    form.addEventListener('submit', function (e) {
         e.preventDefault();
         if (
             campoFullName.value.trim() === '' ||
@@ -115,7 +102,7 @@ window.onload = function () {
                 campo.value = '';
                 error.innerText = '';
             });
-            formulario.style.display = 'none';
+            form.style.display = 'none';
 
             var ul = document.createElement('ul');
 

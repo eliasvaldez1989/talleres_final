@@ -6,16 +6,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/home', function (){
     return view('home');
 });
 
 Auth::routes();
 
-Route::get('registerStore','PostController@index' );
-Route::get('whoWeAre','PostController@indexWhoWeAre' );
-Route::get('faqs','PostController@faqs' );
+Route::get('registerStore','viewsController@index' );
 
-//Route::get('post/create', 'PostController@create');
-//
-//Route::post('post', 'PostController@store');
+Route::get('whoWeAre','viewsController@indexWhoWeAre' );
+
+Route::get('faqs','viewsController@faqs' );
+
+Route::get('/logout', 'Auth\LoginController@logout');

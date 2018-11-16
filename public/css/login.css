@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -36,6 +37,16 @@ blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
+}
+.form-control{
+    width: 81%;
+    border-radius: 1.25rem;
+}
+.custom-select.is-invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid {
+    border-color: #e3833e;
+}
+.invalid-feedback {
+    color: #e3833e;
 }
 table {
 	border-collapse: collapse;

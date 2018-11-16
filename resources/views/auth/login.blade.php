@@ -7,7 +7,6 @@
 @endsection
 
 @section('container')
-
     <div class="container contenedor">
 
         <section class="">
@@ -16,7 +15,7 @@
 
                 <p class="sosnuevo">¿Sos nuevo?</p>
 
-                <form method="post" action="" class="needs-validation" novalidate enctype="multipart/form-data">
+                <form method="post" action="{{ route('register') }}" class="needs-validation registerUser" novalidate enctype="multipart/form-data">
 
                     @csrf
 
@@ -24,12 +23,13 @@
 
                         <label class="parrwhite" for="validationCustom1">Nombre</label>
 
-                        <input type="text" name="name" id="validationCustom1" class="form-control {{ $errors->has('name') ? ' is-invalid' : '' }}" value="{{old('name')}}" required autofocus>
+                        <input type="text" name="name" id="validationCustom1" class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" value="{{old('email')}}" value="{{old('name')}}" required>
 
-                        <div class="invalid-feedback">
-                            Tenes que poner un nombre
-                        </div>
-
+                        @if ($errors->has('name'))
+                            <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                        @endif
                     </div>
 
                     <div class="form-group">
@@ -55,7 +55,7 @@
 
                         @if ($errors->has('password'))
                             <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
+                                        <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                         @endif
                     </div>

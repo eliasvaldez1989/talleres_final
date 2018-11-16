@@ -14,5 +14,20 @@ class Store extends Model
     {
         return $this->belongsTo(Neighborhood::class);
     }
-
+    public function getName()
+    {
+        return this->name;
+    }
+    public function getAdress()
+    {
+        return this->adress;
+    }
+    public function getDescription()
+    {
+        return this->description;
+    }
+    public function getNeighborhoodid()
+    {
+        return this->neighborhood_id;
+    }
 }
