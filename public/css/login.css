@@ -47,6 +47,7 @@ q:before, q:after {
 }
 .invalid-feedback {
     color: #e3833e;
+    font-family:"Montserrat";
 }
 table {
 	border-collapse: collapse;
@@ -75,7 +76,7 @@ header nav a{
 
 }
 ::placeholder{
-	color: red;
+	color: #ffa127;
 }
 header ul{
 text-align:right;
@@ -231,6 +232,7 @@ label{
 	line-height: 37px;
 }
 input{
+  font-family: 'Montserrat';
   height: 30px;
 	width: 70%;
 	border-radius: 25px;
@@ -262,33 +264,6 @@ input{
   text-align: center;
 	margin:15%;
 	margin-left: 23vw;
-}
-footer{
-  background-color: black;
-	text-align: center;
-  bottom:  0px;
-
-}
-footer a{
-  color: white;
-  display: inline;
-	font-family: 'Montserrat';
-	font-size: 16px;
-	letter-spacing: 1.71px;
-	line-height: 21px;
-	font-weight: 200;
-}
-footer ul{
-text-align:center;
-padding-top: 10px;
-list-style-type: none;
-}
-
-footer li{
-  list-style-type: none;
-   display: inline;
-   padding-right: 5px;
-
 }
 /* ASOCIATE */
 

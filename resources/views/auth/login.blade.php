@@ -23,7 +23,7 @@
 
                         <label class="parrwhite" for="validationCustom1">Nombre</label>
 
-                        <input type="text" name="name" id="validationCustom1" class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" value="{{old('email')}}" value="{{old('name')}}" required>
+                        <input type="text" name="name" id="validationCustom1" class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}"  value="{{old('name')}}" required>
 
                         @if ($errors->has('name'))
                             <span class="invalid-feedback" role="alert">
